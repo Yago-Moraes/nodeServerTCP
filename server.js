@@ -2,7 +2,7 @@ import net from 'net'
 import fs, { existsSync}from 'fs'
 
 const port = 8000
-const pathArchive = "/home/yago-calindra/Área de Trabalho/Calindra_Programa/servidorNode/arquivos"
+const pathArchive = "./arquivos"
 
 const server = net.createServer((socket)=>{
     socket.on("data",(data)=>{
